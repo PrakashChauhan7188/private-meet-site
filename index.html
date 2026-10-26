@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Meet</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fff4f8;color:#382333}
+header{background:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0000000b}
+.logo{font-size:25px;font-weight:bold;color:#d8327c}
+nav a{margin-left:14px;color:#713252;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:55px 20px;background:linear-gradient(135deg,#ffd7e8,#fff0f6)}
+.hero h1{font-size:clamp(34px,7vw,54px);margin:0 0 15px}
+.hero h1 span{color:#d8327c}
+.hero p{color:#725a69;line-height:1.7}
+.btn{display:inline-block;background:#d8327c;color:white;padding:13px 22px;border:0;border-radius:25px;text-decoration:none;font-weight:bold;cursor:pointer}
+section{padding:35px 5%}
+h2{text-align:center}
+.intro{text-align:center;color:#796575;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:25px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px #57243c12}
+.card img{width:100%;height:270px;object-fit:cover;display:block}
+.card-content{padding:18px}
+.card h3{margin:0 0 10px;color:#a52c65}
+.card p{color:#725e6a;line-height:1.6;font-size:14px}
+.status{background:#fff0f6;padding:9px;border-radius:9px;font-size:12px;color:#96335f}
+form{max-width:520px;margin:25px auto;background:white;padding:24px;border-radius:18px;box-shadow:0 5px 20px #57243c10}
+label{display:block;margin:14px 0 6px;font-weight:bold}
+input,select,textarea{width:100%;padding:12px;border:1px solid #e8cbd9;border-radius:9px;font:inherit}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:normal;font-size:14px;line-height:1.5}
+.check input{width:auto;margin-top:4px}
+form button{width:100%;margin-top:18px}
+.notice{max-width:760px;margin:20px auto;background:#fff;border:1px solid #f0ccdc;padding:16px;border-radius:12px;line-height:1.7;font-size:13px;color:#705263}
+footer{text-align:center;padding:25px;background:#47253a;color:white;line-height:1.8}
+footer a{color:#ffd9e9}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Private Meet ♡</div>
+  <nav>
+    <a href="#profiles">Profiles</a>
+    <a href="#booking">Booking</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Meet. Connect. <span>Respect.</span></h1>
+  <p>Private video conversations for consenting adults aged 18 and above.</p>
+  <a class="btn" href="#profiles">Explore Profiles</a>
+</div>
+
+<section id="profiles">
+  <h2>Meet Our Community</h2>
+  <p class="intro">Review verified adult profiles and request a time that suits both participants.</p>
+
+  <div class="cards">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
+      <div class="card-content">
+        <h3>Profile One</h3>
+        <p>Profile details and preferences will appear here after verification.</p>
+        <div class="status">Identity, consent and availability must be verified before booking.</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
+      <div class="card-content">
+        <h3>Profile Two</h3>
+        <p>Profile details and preferences will appear here after verification.</p>
+        <div class="status">Identity, consent and availability must be verified before booking.</div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
+      <div class="card-content">
+        <h3>Profile Three</h3>
+        <p>Profile details and preferences will appear here after verification.</p>
+        <div class="status">Identity, consent and availability must be verified before booking.</div>
+      </div>
+    </article>
+  </div>
+
+  <p class="intro">Portraits are illustrative images, not verified service-provider profiles.</p>
+</section>
+
+<section id="booking">
+  <h2>Request a Video Call</h2>
+  <p class="intro">A request is not a confirmed booking. Wait for genuine availability confirmation.</p>
+
+  <form id="bookingForm">
+    <label for="name">Your Name</label>
+    <input id="name" required maxlength="80" placeholder="Enter your name">
+
+    <label for="email">Email Address</label>
+    <input id="email" type="email" required placeholder="you@example.com">
+
+    <label for="city">City</label>
+    <input id="city" required maxlength="100" placeholder="Enter your city">
+
+    <label for="profile">Choose a Profile</label>
+    <select id="profile" required>
+      <option value="">Select a profile</option>
+      <option>Profile One — verification required</option>
+      <option>Profile Two — verification required</option>
+      <option>Profile Three — verification required</option>
+    </select>
+
+    <label for="duration">Preferred Duration</label>
+    <select id="duration" required>
+      <option value="">Select duration</option>
+      <option>5 minutes</option>
+      <option>10 minutes</option>
+      <option>20 minutes</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input id="date" type="date" required>
+
+    <label class="check">
+      <input type="checkbox" required>
+      <span>I confirm that I am 18 or older and agree to respect everyone's consent, privacy and boundaries.</span>
+    </label>
+
+    <button class="btn" type="submit">Review Booking Request</button>
+    <p id="result" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<div class="notice">
+  <strong>Safety and transparency:</strong>
+  All participants must be adults who freely consent. Verify profiles and availability before accepting bookings. Display actual prices, cancellation terms, privacy policy and support details before accepting payment. Do not upload anyone's photo without permission.
+  <br><br>
+  This website currently collects no data on a server and does not process payments. The booking form only displays a local confirmation.
+</div>
+
+<footer>
+  <strong>Private Meet</strong><br>
+  Adults 18+ · Consent · Privacy · Respect<br>
+  <a href="#booking">Booking enquiries</a>
+</footer>
+
+<script>
+const dateField = document.getElementById('date');
+dateField.min = new Date().toLocaleDateString('en-CA');
+
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  document.getElementById('result').textContent =
+    'Your request details are ready for review. No booking has been made, and no information has been sent or stored.';
+});
+</script>
+</body>
+</html>
