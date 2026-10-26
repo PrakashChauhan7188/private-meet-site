@@ -4,156 +4,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Meet</title>
+<title>Private Meet ♡</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#fff4f8;color:#382333}
-header{background:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px #0000000b}
+body{margin:0;font-family:Arial,sans-serif;background:#fff5f9;color:#382333}
+header{background:#fff;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;box-shadow:0 2px 12px #00000010}
 .logo{font-size:25px;font-weight:bold;color:#d8327c}
-nav a{margin-left:14px;color:#713252;text-decoration:none;font-weight:bold}
-.hero{text-align:center;padding:55px 20px;background:linear-gradient(135deg,#ffd7e8,#fff0f6)}
-.hero h1{font-size:clamp(34px,7vw,54px);margin:0 0 15px}
-.hero h1 span{color:#d8327c}
-.hero p{color:#725a69;line-height:1.7}
-.btn{display:inline-block;background:#d8327c;color:white;padding:13px 22px;border:0;border-radius:25px;text-decoration:none;font-weight:bold;cursor:pointer}
-section{padding:35px 5%}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+a{color:#713252;text-decoration:none;font-weight:bold}
+select,input,textarea,button{font:inherit;padding:12px;border:1px solid #e8cbd8;border-radius:10px}
+.hero{text-align:center;padding:65px 5%;background:linear-gradient(135deg,#ffd7e8,#fff0f6)}
+.hero h1{font-size:clamp(34px,7vw,60px);margin:10px 0;color:#d8327c}
+.hero p{font-size:19px;line-height:1.7;color:#795769}
+.btn,button{display:inline-block;background:#d8327c;color:#fff;border:0;border-radius:28px;padding:14px 22px;cursor:pointer}
+section{padding:35px 5%;max-width:1100px;margin:auto}
 h2{text-align:center}
-.intro{text-align:center;color:#796575;line-height:1.7}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:25px}
-.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px #57243c12}
-.card img{width:100%;height:270px;object-fit:cover;display:block}
+.intro{text-align:center;color:#795769;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:25px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 22px #57243c10}
+.card img{width:100%;height:260px;object-fit:cover;display:block}
 .card-content{padding:18px}
-.card h3{margin:0 0 10px;color:#a52c65}
-.card p{color:#725e6a;line-height:1.6;font-size:14px}
-.status{background:#fff0f6;padding:9px;border-radius:9px;font-size:12px;color:#96335f}
-form{max-width:520px;margin:25px auto;background:white;padding:24px;border-radius:18px;box-shadow:0 5px 20px #57243c10}
-label{display:block;margin:14px 0 6px;font-weight:bold}
-input,select,textarea{width:100%;padding:12px;border:1px solid #e8cbd9;border-radius:9px;font:inherit}
+.card p{line-height:1.5}
+.status{background:#fff0f6;padding:9px;border-radius:9px;font-size:13px;color:#96335f}
+form{max-width:560px;margin:25px auto;background:#fff;padding:24px;border-radius:18px;box-shadow:0 5px 20px #57243c10}
+label{display:block;margin-top:14px;font-weight:bold}
+input,select,textarea{width:100%;margin-top:7px}
 .check{display:flex;gap:10px;align-items:flex-start;font-weight:normal;font-size:14px;line-height:1.5}
 .check input{width:auto;margin-top:4px}
-form button{width:100%;margin-top:18px}
-.notice{max-width:760px;margin:20px auto;background:#fff;border:1px solid #f0ccdc;padding:16px;border-radius:12px;line-height:1.7;font-size:13px;color:#705263}
-footer{text-align:center;padding:25px;background:#47253a;color:white;line-height:1.8}
-footer a{color:#ffd9e9}
+.notice{max-width:760px;margin:20px auto;background:#fff;border:1px solid #f0ccdc;padding:16px;border-radius:12px;line-height:1.6}
+footer{text-align:center;padding:25px;background:#47253a;color:#fff;line-height:1.8}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="logo">Private Meet ♡</div>
-  <nav>
-    <a href="#profiles">Profiles</a>
-    <a href="#booking">Booking</a>
-  </nav>
+<div class="logo">Private Meet ♡</div>
+<nav>
+<a href="#profiles" data-i="profiles">Profiles</a>
+<a href="#booking" data-i="booking">Booking</a>
+<label for="language" style="margin:0">🌐</label>
+<select id="language" aria-label="Language">
+<option value="en">English</option>
+<option value="gu">ગુજરાતી</option>
+<option value="hi">हिन्दी</option>
+<option value="mr">मराठी</option>
+<option value="bn">বাংলা</option>
+<option value="ta">தமிழ்</option>
+<option value="te">తెలుగు</option>
+<option value="kn">ಕನ್ನಡ</option>
+<option value="ml">മലയാളം</option>
+<option value="pa">ਪੰਜਾਬੀ</option>
+<option value="ur">اردو</option>
+<option value="ne">नेपाली</option>
+<option value="fr">Français</option>
+<option value="es">Español</option>
+<option value="pt">Português</option>
+</select>
+</nav>
 </header>
 
 <div class="hero">
-  <h1>Meet. Connect. <span>Respect.</span></h1>
-  <p>Private video conversations for consenting adults aged 18 and above.</p>
-  <a class="btn" href="#profiles">Explore Profiles</a>
+<h1 data-i="headline">Meet. Connect. Respect.</h1>
+<p data-i="tagline">Private video conversations for consenting adults aged 18 and above.</p>
+<a class="btn" href="#profiles" data-i="explore">Explore Profiles</a>
 </div>
 
 <section id="profiles">
-  <h2>Meet Our Community</h2>
-  <p class="intro">Review verified adult profiles and request a time that suits both participants.</p>
-
-  <div class="cards">
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
-      <div class="card-content">
-        <h3>Profile One</h3>
-        <p>Profile details and preferences will appear here after verification.</p>
-        <div class="status">Identity, consent and availability must be verified before booking.</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
-      <div class="card-content">
-        <h3>Profile Two</h3>
-        <p>Profile details and preferences will appear here after verification.</p>
-        <div class="status">Identity, consent and availability must be verified before booking.</div>
-      </div>
-    </article>
-
-    <article class="card">
-      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80" alt="Portrait photograph">
-      <div class="card-content">
-        <h3>Profile Three</h3>
-        <p>Profile details and preferences will appear here after verification.</p>
-        <div class="status">Identity, consent and availability must be verified before booking.</div>
-      </div>
-    </article>
-  </div>
-
-  <p class="intro">Portraits are illustrative images, not verified service-provider profiles.</p>
+<h2 data-i="community">Meet Our Community</h2>
+<p class="intro" data-i="communityIntro">View illustrative profile cards. All participants must be real, verified adults who freely consent to participate.</p>
+<div class="cards">
+<article class="card">
+<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait" loading="lazy">
+<div class="card-content"><h3 data-i="profile1">Profile One</h3><p data-i="profileDesc">Example layout only. This is not a real or verified member.</p><div class="status" data-i="verification">Identity, age, consent and availability must be verified before any booking.</div></div>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait" loading="lazy">
+<div class="card-content"><h3 data-i="profile2">Profile Two</h3><p data-i="profileDesc">Example layout only. This is not a real or verified member.</p><div class="status" data-i="verification">Identity, age, consent and availability must be verified before any booking.</div></div>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Illustrative portrait" loading="lazy">
+<div class="card-content"><h3 data-i="profile3">Profile Three</h3><p data-i="profileDesc">Example layout only. This is not a real or verified member.</p><div class="status" data-i="verification">Identity, age, consent and availability must be verified before any booking.</div></div>
+</article>
+</div>
+<div class="notice" data-i="photoNote">Photos are illustrative examples, not actual service providers. Replace them only with images used with permission and accurate profile information.</div>
 </section>
 
 <section id="booking">
-  <h2>Request a Video Call</h2>
-  <p class="intro">A request is not a confirmed booking. Wait for genuine availability confirmation.</p>
-
-  <form id="bookingForm">
-    <label for="name">Your Name</label>
-    <input id="name" required maxlength="80" placeholder="Enter your name">
-
-    <label for="email">Email Address</label>
-    <input id="email" type="email" required placeholder="you@example.com">
-
-    <label for="city">City</label>
-    <input id="city" required maxlength="100" placeholder="Enter your city">
-
-    <label for="profile">Choose a Profile</label>
-    <select id="profile" required>
-      <option value="">Select a profile</option>
-      <option>Profile One — verification required</option>
-      <option>Profile Two — verification required</option>
-      <option>Profile Three — verification required</option>
-    </select>
-
-    <label for="duration">Preferred Duration</label>
-    <select id="duration" required>
-      <option value="">Select duration</option>
-      <option>5 minutes</option>
-      <option>10 minutes</option>
-      <option>20 minutes</option>
-    </select>
-
-    <label for="date">Preferred Date</label>
-    <input id="date" type="date" required>
-
-    <label class="check">
-      <input type="checkbox" required>
-      <span>I confirm that I am 18 or older and agree to respect everyone's consent, privacy and boundaries.</span>
-    </label>
-
-    <button class="btn" type="submit">Review Booking Request</button>
-    <p id="result" role="status" aria-live="polite"></p>
-  </form>
+<h2 data-i="bookingTitle">Request a Booking</h2>
+<p class="intro" data-i="bookingIntro">Submit a request for a consensual video conversation between verified adults aged 18 or older.</p>
+<form id="bookingForm">
+<label for="customer" data-i="nameLabel">Your name</label>
+<input id="customer" name="customer" required maxlength="80" autocomplete="name">
+<label for="email" data-i="emailLabel">Email address</label>
+<input id="email" name="email" type="email" required autocomplete="email">
+<label for="profile" data-i="profileLabel">Profile requested</label>
+<select id="profile" name="profile" required>
+<option value="" data-i="choose">Choose a profile</option>
+<option value="Profile One">Profile One</option>
+<option value="Profile Two">Profile Two</option>
+<option value="Profile Three">Profile Three</option>
+</select>
+<label for="date" data-i="dateLabel">Preferred date</label>
+<input id="date" name="date" type="date" required>
+<label for="time" data-i="timeLabel">Preferred time</label>
+<input id="time" name="time" type="time" required>
+<label for="duration" data-i="durationLabel">Duration</label>
+<select id="duration" name="duration" required>
+<option value="5">5 minutes</option>
+<option value="10">10 minutes</option>
+<option value="20">20 minutes</option>
+<option value="30">30 minutes</option>
+<option value="60">60 minutes</option>
+</select>
+<label class="check"><input type="checkbox" required><span data-i="adultConsent">I confirm that I am 18 or older and agree to the service terms.</span></label>
+<label class="check"><input type="checkbox" required><span data-i="privacyConsent">I understand this form needs a secure backend to send and store my request. This demo does not transmit my information.</span></label>
+<button type="submit" style="width:100%;margin-top:18px" data-i="submit">Review Booking Request</button>
+<p id="formMessage" role="status" aria-live="polite"></p>
+</form>
+<div class="notice" data-i="paymentNote">Payments are not enabled in this demo. Razorpay must be connected through a secure server that creates orders and verifies payment signatures. Never put your Razorpay Key Secret in this HTML file.</div>
 </section>
 
-<div class="notice">
-  <strong>Safety and transparency:</strong>
-  All participants must be adults who freely consent. Verify profiles and availability before accepting bookings. Display actual prices, cancellation terms, privacy policy and support details before accepting payment. Do not upload anyone's photo without permission.
-  <br><br>
-  This website currently collects no data on a server and does not process payments. The booking form only displays a local confirmation.
-</div>
-
 <footer>
-  <strong>Private Meet</strong><br>
-  Adults 18+ · Consent · Privacy · Respect<br>
-  <a href="#booking">Booking enquiries</a>
+<div>Private Meet ♡</div>
+<span data-i="footer">For adults 18+ only. Respect privacy, consent and local law.</span>
 </footer>
 
 <script>
-const dateField = document.getElementById('date');
-dateField.min = new Date().toLocaleDateString('en-CA');
-
-document.getElementById('bookingForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  document.getElementById('result').textContent =
-    'Your request details are ready for review. No booking has been made, and no information has been sent or stored.';
+const translations={
+en:{profiles:"Profiles",booking:"Booking",headline:"Meet. Connect. Respect.",tagline:"Private video conversations for consenting adults aged 18 and above.",explore:"Explore Profiles",community:"Meet Our Community",communityIntro:"View illustrative profile cards. All participants must be real, verified adults who freely consent to participate.",profile1:"Profile One",profile2:"Profile Two",profile3:"Profile Three",profileDesc:"Example layout only. This is not a real or verified member.",verification:"Identity, age, consent and availability must be verified before any booking.",photoNote:"Photos are illustrative examples, not actual service providers. Use only images with permission and accurate profile information.",bookingTitle:"Request a Booking",bookingIntro:"Submit a request for a consensual video conversation between verified adults aged 18 or older.",nameLabel:"Your name",emailLabel:"Email address",profileLabel:"Profile requested",choose:"Choose a profile",dateLabel:"Preferred date",timeLabel:"Preferred time",durationLabel:"Duration",adultConsent:"I confirm that I am 18 or older and agree to the service terms.",privacyConsent:"I understand this demo does not transmit or store my information.",submit:"Review Booking Request",paymentNote:"Payments are not enabled in this demo. Razorpay needs a secure server to create orders and verify payments. Never put your Key Secret in this HTML file.",footer:"For adults 18+ only. Respect privacy, consent and local law.",demo:"Demo only: your request was not sent or saved."},
+gu:{profiles:"પ્રોફાઇલ",booking:"બુકિંગ",headline:"મળો. જોડાઓ. સન્માન કરો.",tagline:"18 વર્ષ કે તેથી વધુ ઉંમરના સંમતિ આપતા પુખ્ત વયના લોકો માટે ખાનગી વિડિયો વાતચીત.",explore:"પ્રોફાઇલ જુઓ",community:"અમારો સમુદાય",communityIntro:"આ ઉદાહરણ પ્રોફાઇલ કાર્ડ છે. વાસ્તવિક ભાગ લેનાર પુખ્ત વયના અને સંમતિ આપનાર હોવા જોઈએ.",profile1:"પ્રોફાઇલ એક",profile2:"પ્રોફાઇલ બે",profile3:"પ્રોફાઇલ ત્રણ",profileDesc:"આ માત્ર નમૂનો છે, વાસ્તવિક અથવા ચકાસાયેલ સભ્ય નથી.",verification:"બુકિંગ પહેલાં ઓળખ, ઉંમર, સંમતિ અને ઉપલબ્ધતા ચકાસવી જરૂરી છે.",photoNote:"આ ફોટા માત્ર ઉદાહરણ છે. પરવાનગીવાળા ફોટા અને સાચી માહિતી જ વાપરો.",bookingTitle:"બુકિંગની વિનંતી",bookingIntro:"18 વર્ષથી વધુ ઉંમરના ચકાસાયેલા પુખ્ત વયના લોકો માટે વિડિયો વાતચીતની વિનંતી કરો.",nameLabel:"તમારું નામ",emailLabel:"ઈમેઇલ સરનામું",profileLabel:"પસંદ કરેલી પ્રોફાઇલ",choose:"પ્રોફાઇલ પસંદ કરો",dateLabel:"પસંદગીની તારીખ",timeLabel:"પસંદગીનો સમય",durationLabel:"સમયગાળો",adultConsent:"હું પુષ્ટિ કરું છું કે મારી ઉંમર 18 વર્ષ કે તેથી વધુ છે અને હું નિયમો સ્વીકારું છું.",privacyConsent:"મને સમજાય છે કે આ ડેમો મારી માહિતી મોકલતો કે સાચવતો નથી.",submit:"બુકિંગ વિનંતી તપાસો",paymentNote:"આ ડેમોમાં પેમેન્ટ ચાલુ નથી. Razorpay માટે સુરક્ષિત સર્વર જરૂરી છે. તમારી ગુપ્ત Key Secret આ ફાઇલમાં ક્યારેય ન લખો.",footer:"માત્ર 18 વર્ષથી વધુ ઉંમરના લોકો માટે. ગોપનીયતા, સંમતિ અને કાયદાનું સન્માન કરો.",demo:"આ ડેમો છે: તમારી વિનંતી મોકલાઈ નથી કે સાચવાઈ નથી."},
+hi:{profiles:"प्रोफ़ाइल",booking:"बुकिंग",headline:"मिलें। जुड़ें। सम्मान करें।",tagline:"18 वर्ष या उससे अधिक उम्र के सहमति देने वाले वयस्कों के लिए निजी वीडियो बातचीत।",explore:"प्रोफ़ाइल देखें",community:"हमारा समुदाय",communityIntro:"ये उदाहरण प्रोफ़ाइल कार्ड हैं। सभी प्रतिभागी वास्तविक, सत्यापित वयस्क और सहमति देने वाले होने चाहिए।",profile1:"प्रोफ़ाइल एक",profile2:"प्रोफ़ाइल दो",profile3:"प्रोफ़ाइल तीन",profileDesc:"यह केवल उदाहरण है, वास्तविक या सत्यापित सदस्य नहीं।",verification:"बुकिंग से पहले पहचान, उम्र, सहमति और उपलब्धता सत्यापित करें।",photoNote:"तस्वीरें केवल उदाहरण हैं। अनुमति प्राप्त तस्वीरें और सही जानकारी ही इस्तेमाल करें।",bookingTitle:"बुकिंग अनुरोध",bookingIntro:"18 वर्ष से अधिक सत्यापित वयस्कों के बीच वीडियो बातचीत के लिए अनुरोध करें।",nameLabel:"आपका नाम",emailLabel:"ईमेल पता",profileLabel:"चुनी गई प्रोफ़ाइल",choose:"प्रोफ़ाइल चुनें",dateLabel:"पसंदीदा तारीख",timeLabel:"पसंदीदा समय",durationLabel:"अवधि",adultConsent:"मैं पुष्टि करता/करती हूँ कि मेरी उम्र कम से कम 18 वर्ष है और मैं शर्तें स्वीकार करता/करती हूँ।",privacyConsent:"मैं समझता/समझती हूँ कि यह डेमो मेरी जानकारी भेजता या सहेजता नहीं है।",submit:"बुकिंग अनुरोध देखें",paymentNote:"इस डेमो में भुगतान चालू नहीं है। Razorpay के लिए सुरक्षित सर्वर आवश्यक है। Key Secret को HTML में न रखें।",footer:"केवल 18+ वयस्कों के लिए। गोपनीयता, सहमति और कानून का सम्मान करें।",demo:"यह डेमो है: आपका अनुरोध भेजा या सहेजा नहीं गया।"},
+mr:{headline:"भेटा. जोडा. आदर करा.",tagline:"18 वर्षांवरील संमती देणाऱ्या प्रौढांसाठी खासगी व्हिडिओ संवाद.",explore:"प्रोफाइल पहा",community:"आमचा समुदाय",bookingTitle:"बुकिंगची विनंती",nameLabel:"तुमचे नाव",emailLabel:"ईमेल",dateLabel:"पसंतीची तारीख",timeLabel:"पसंतीची वेळ",durationLabel:"कालावधी",submit:"बुकिंग विनंती तपासा",footer:"फक्त 18 वर्षांवरील प्रौढांसाठी."},
+bn:{headline:"পরিচিত হন। সংযুক্ত হন। সম্মান করুন।",tagline:"১৮ বছর বা তার বেশি বয়সী সম্মত প্রাপ্তবয়স্কদের ব্যক্তিগত ভিডিও কথোপকথন।",explore:"প্রোফাইল দেখুন",community:"আমাদের কমিউনিটি",bookingTitle:"বুকিং অনুরোধ",nameLabel:"আপনার নাম",emailLabel:"ইমেল",dateLabel:"পছন্দের তারিখ",timeLabel:"পছন্দের সময়",durationLabel:"সময়কাল",submit:"বুকিং অনুরোধ দেখুন",footer:"শুধুমাত্র ১৮ বছরের বেশি প্রাপ্তবয়স্কদের জন্য।"},
+ta:{headline:"சந்திக்கவும். இணைக்கவும். மதிக்கவும்.",tagline:"18 வயதுக்கு மேற்பட்ட சம்மதிக்கும் பெரியவர்களுக்கான தனிப்பட்ட வீடியோ உரையாடல்.",explore:"சுயவிவரங்களைப் பார்க்க",community:"எங்கள் சமூகம்",bookingTitle:"முன்பதிவு கோரிக்கை",nameLabel:"உங்கள் பெயர்",emailLabel:"மின்னஞ்சல்",dateLabel:"விரும்பும் தேதி",timeLabel:"விரும்பும் நேரம்",durationLabel:"கால அளவு",submit:"கோரிக்கையைப் பார்க்க",footer:"18 வயதுக்கு மேற்பட்டவர்களுக்கு மட்டும்."},
+te:{headline:"కలవండి. కలిసుండండి. గౌరవించండి.",tagline:"18 ఏళ్లు పైబడిన సమ్మతించే పెద్దల కోసం ప్రైవేట్ వీడియో సంభాషణలు.",explore:"ప్రొఫైళ్లను చూడండి",community:"మా కమ్యూనిటీ",bookingTitle:"బుకింగ్ అభ్యర్థన",nameLabel:"మీ పేరు",emailLabel:"ఇమెయిల్",dateLabel:"కావలసిన తేదీ",timeLabel:"కావలసిన సమయం",durationLabel:"వ్యవధి",submit:"అభ్యర్థనను చూడండి",footer:"18 ఏళ్లు పైబడిన వారికి మాత్రమే."},
+kn:{headline:"ಭೇಟಿಯಾಗಿ. ಸಂಪರ್ಕಿಸಿ. ಗೌರವಿಸಿ.",tagline:"18 ವರ್ಷ ಮೇಲ್ಪಟ್ಟ ಸಮ್ಮತಿಸುವ ವಯಸ್ಕರಿಗಾಗಿ ಖಾಸಗಿ ವೀಡಿಯೊ ಸಂಭಾಷಣೆ.",explore:"ಪ್ರೊಫೈಲ್ ನೋಡಿ",community:"ನಮ್ಮ ಸಮುದಾಯ",bookingTitle:"ಬುಕಿಂಗ್ ವಿನಂತಿ",nameLabel:"ನಿಮ್ಮ ಹೆಸರು",emailLabel:"ಇಮೇಲ್",dateLabel:"ಆದ್ಯತೆಯ ದಿನಾಂಕ",timeLabel:"ಆದ್ಯತೆಯ ಸಮಯ",durationLabel:"ಅವಧಿ",submit:"ವಿನಂತಿ ಪರಿಶೀಲಿಸಿ",footer:"18 ವರ್ಷ ಮೇಲ್ಪಟ್ಟವರಿಗೆ ಮಾತ್ರ."},
+ml:{headline:"കണ്ടുമുട്ടൂ. ബന്ധപ്പെടൂ. ബഹുമാനിക്കൂ.",tagline:"18 വയസ്സിന് മുകളിലുള്ള സമ്മതമുള്ള മുതിർന്നവർക്കായുള്ള സ്വകാര്യ വീഡിയോ സംഭാഷണം.",explore:"പ്രൊഫൈലുകൾ കാണുക",community:"ഞങ്ങളുടെ സമൂഹം",bookingTitle:"ബുക്കിംഗ് അഭ്യർത്ഥന",nameLabel:"നിങ്ങളുടെ പേര്",emailLabel:"ഇമെയിൽ",dateLabel:"ആഗ്രഹിക്കുന്ന തീയതി",timeLabel:"ആഗ്രഹിക്കുന്ന സമയം",durationLabel:"ദൈർഘ്യം",submit:"അഭ്യർത്ഥന പരിശോധിക്കുക",footer:"18 വയസ്സിന് മുകളിലുള്ളവർക്ക് മാത്രം."},
+pa:{headline:"ਮਿਲੋ। ਜੁੜੋ। ਸਤਿਕਾਰ ਕਰੋ।",tagline:"18 ਸਾਲ ਤੋਂ ਵੱਧ ਉਮਰ ਦੇ ਸਹਿਮਤ ਬਾਲਗਾਂ ਲਈ ਨਿੱਜੀ ਵੀਡੀਓ ਗੱਲਬਾਤ।",explore:"ਪ੍ਰੋਫ਼ਾਈਲ ਵੇਖੋ",community:"ਸਾਡਾ ਭਾਈਚਾਰਾ",bookingTitle:"ਬੁਕਿੰਗ ਬੇਨਤੀ",nameLabel:"ਤੁਹਾਡਾ ਨਾਮ",emailLabel:"ਈਮੇਲ",dateLabel:"ਪਸੰਦੀਦਾ ਤਾਰੀਖ",timeLabel:"ਪਸੰਦੀਦਾ ਸਮਾਂ",durationLabel:"ਮਿਆਦ",submit:"ਬੇਨਤੀ ਵੇਖੋ",footer:"ਸਿਰਫ਼ 18 ਸਾਲ ਤੋਂ ਵੱਧ ਬਾਲਗਾਂ ਲਈ।"},
+ur:{headline:"ملیں۔ جڑیں۔ احترام کریں۔",tagline:"18 سال یا اس سے زیادہ عمر کے رضامند بالغوں کے لیے نجی ویڈیو گفتگو۔",explore:"پروفائل دیکھیں",community:"ہماری کمیونٹی",bookingTitle:"بکنگ کی درخواست",nameLabel:"آپ کا نام",emailLabel:"ای میل",dateLabel:"پسندیدہ تاریخ",timeLabel:"پسندیدہ وقت",durationLabel:"دورانیہ",submit:"درخواست دیکھیں",footer:"صرف 18 سال سے زیادہ عمر کے بالغوں کے لیے۔"},
+ne:{headline:"भेट्नुहोस्। जोडिनुहोस्। सम्मान गर्नुहोस्।",tagline:"18 वर्षभन्दा माथिका सहमत वयस्कहरूका लागि निजी भिडियो कुराकानी।",explore:"प्रोफाइल हेर्नुहोस्",community:"हाम्रो समुदाय",bookingTitle:"बुकिङ अनुरोध",nameLabel:"तपाईंको नाम",emailLabel:"इमेल",dateLabel:"मनपर्ने मिति",timeLabel:"मनपर्ने समय",durationLabel:"अवधि",submit:"अनुरोध हेर्नुहोस्",footer:"18 वर्षभन्दा माथिका वयस्कका लागि मात्र।"},
+fr:{headline:"Rencontrez. Connectez-vous. Respectez.",tagline:"Conversations vidéo privées pour adultes consentants de 18 ans et plus.",explore:"Voir les profils",community:"Notre communauté",bookingTitle:"Demande de réservation",nameLabel:"Votre nom",emailLabel:"Adresse e-mail",dateLabel:"Date souhaitée",timeLabel:"Heure souhaitée",durationLabel:"Durée",submit:"Vérifier la demande",footer:"Réservé aux adultes de 18 ans et plus."},
+es:{headline:"Conoce. Conecta. Respeta.",tagline:"Conversaciones privadas por vídeo para adultos que consienten y tienen 18 años o más.",explore:"Ver perfiles",community:"Nuestra comunidad",bookingTitle:"Solicitud de reserva",nameLabel:"Tu nombre",emailLabel:"Correo electrónico",dateLabel:"Fecha preferida",timeLabel:"Hora preferida",durationLabel:"Duración",submit:"Revisar solicitud",footer:"Solo para adultos mayores de 18 años."},
+pt:{headline:"Conheça. Conecte-se. Respeite.",tagline:"Conversas privadas por vídeo para adultos consentidos com 18 anos ou mais.",explore:"Ver perfis",community:"Nossa comunidade",bookingTitle:"Pedido de reserva",nameLabel:"Seu nome",emailLabel:"E-mail",dateLabel:"Data preferida",timeLabel:"Horário preferido",durationLabel:"Duração",submit:"Rever pedido",footer:"Apenas para adultos com 18 anos ou mais."}
+};
+const languageSelect=document.getElementById("language");
+function setLanguage(lang){
+const t=translations[lang]||translations.en;
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-i]").forEach(el=>{
+const key=el.dataset.i;
+if(t[key]) el.textContent=t[key];
+else if(translations.en[key]) el.textContent=translations.en[key];
 });
+document.getElementById("profile").options[0].textContent=t.choose||translations.en.choose;
+document.getElementById("profile").options[1].textContent=t.profile1||translations.en.profile1;
+document.getElementById("profile").options[2].textContent=t.profile2||translations.en.profile2;
+document.getElementById("profile").options[3].textContent=t.profile3||translations.en.profile3;
+document.getElementById("formMessage").textContent="";
+}
+languageSelect.addEventListener("change",e=>setLanguage(e.target.value));
+document.getElementById("bookingForm").addEventListener("submit",e=>{
+e.preventDefault();
+document.getElementById("formMessage").textContent=(translations[languageSelect.value]||translations.en).demo||translations.en.demo;
+});
+const dateInput=document.getElementById("date");
+const today=new Date();
+dateInput.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
 </script>
 </body>
 </html>
